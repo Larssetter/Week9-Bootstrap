@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 coding bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <!--inline style for img fixed height and width-->
+    <style>
+
+     img { width:640px; height:360px; }  
+    </style>
+    </head>
+    <body>
+
+   <!--<div class="alert alert-primary" role="alert">
+       It works! 
+       </div> test only-->
+
+      
+
+       <!--navbar fluid, spans entire width-->
+       <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active color" aria-current="page" href="index.html">Tesla</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose car model below
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 
+                  <li><a class="dropdown-item" href="page2.html">Model S</a></li>
+                  <li><a class="dropdown-item" href="page3.html">Model 3</a></li>
+                  <li><a class="dropdown-item" href="page4.html">Model X</a></li>
+                  <li><a class="dropdown-item" href="page5.html">Model Y</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <!--header title-->
+      <h1 class="display-2">Wecome to Tesla</h1>
+
+      
+
+      <!--images grid stackable-->
+      <div class="container-fluid">
+          
+        <div class="row">
+          <div class="col">
+            <img src="jenny-ueberberg-LANjxklwcFg-unsplash.jpg">
+          </div>
+          <div class="col">
+            <img src="bram-van-oost-4xM5cytsdMo-unsplash.jpg">
+          </div>
+          <div class="col">
+            <img src="paul-steuber-huV0Jexsi3o-unsplash.jpg">
+          </div>
+        </div>
+        
+      </div>
+      <br>
+      <br>
+
+
+      <!--table boostrap-->
+      <div class="container-fluid">
+      <table class="table table-dark table-striped">
+
+        <tbody>
+        <tr>
+        <th>Model S</th>
+        <th>Model E</th>
+        <th>Model X</th>
+        <th>Model Y</th>
+        </tr>
+        <tr>
+            <td>New</td>
+            <td>New</td>
+            <td>New</td>
+            <td>New</td>
+          </tr>
+          <tr>
+            <td>In Stock</td>
+            <td>In Stock</td>
+            <td>In Stock</td>
+            <td>In Stock</td>
+          </tr>
+        </tr>
+        <tr>
+          <td>Options</td>
+          <td>Options</td>
+          <td>Options</td>
+          <td>Options</td>
+        </tr>
+
+        
+            
+        </tbody>
+        
+      </table>
+      </div>
+
+      
+
+
+      <!--form bootstrap-->
+
+      <h2 class="display-3">Get on our mailing list!</h2>
+      
+      <form class="container-fluid">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
+
+    
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
